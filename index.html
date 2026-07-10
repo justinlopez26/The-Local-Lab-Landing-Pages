@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LOCAL LAB | Order Without Limits</title>
+    <meta name="description" content="Đặt hàng từ Taobao, 1688, Tmall và Poizon chưa bao giờ dễ dàng đến thế. Quy trình minh bạch, dịch vụ đáng tin cậy.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="container header-container">
+            <a href="#" class="logo" id="headerLogo">
+                THE LOCAL LAB
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#category" class="nav-link">Danh mục</a>
+                <a href="#process" class="nav-link">Quy trình</a>
+                <a href="#why-choose-us" class="nav-link">Vì sao chọn</a>
+                <a href="#policies" class="nav-link">Chính sách</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline btn-sm track-btn-trigger" id="openTrackBtn">
+                    <i data-lucide="search"></i> Tra cứu đơn
+                </button>
+                <button class="btn btn-primary btn-sm order-btn-trigger">
+                    ĐẶT HÀNG NGAY
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Split Layout) -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="hero-grid-split">
+                <!-- Left column: Text content & CTA -->
+                <div class="hero-content">
+                    <span class="hero-badge">THE LOCAL LAB</span>
+                    <h1 class="hero-title">ORDER WITHOUT LIMITS</h1>
+                    <p class="hero-tagline">Authentic Selection &bull; Competitive Pricing &bull; Trusted Service</p>
+                    <h2 class="hero-subtext">Đặt hàng từ Taobao, 1688, Tmall và Poizon chưa bao giờ dễ dàng đến thế.</h2>
+                    <p class="hero-desc">Từ lúc chọn sản phẩm đến khi món hàng được trao tận tay, The Local Lab luôn đồng hành cùng bạn với quy trình minh bạch và dịch vụ đáng tin cậy.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large order-btn-trigger">ĐẶT HÀNG NGAY</button>
+                    </div>
+                </div>
+
+                <!-- Right column: Sliding visual block -->
+                <div class="hero-visual">
+                    <div class="hero-slides-wrapper">
+                        <div class="hero-slides" id="heroSlides">
+                            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&q=80&w=800');"></div>
+                            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&q=80&w=800');"></div>
+                            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=800');"></div>
+                            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800');"></div>
+                            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80&w=800');"></div>
+                        </div>
+                    </div>
+                    <!-- Navigation pills for the slides -->
+                    <div class="hero-tabs" id="heroTabs">
+                        <button class="hero-tab active" data-slide="0">Streetwear</button>
+                        <button class="hero-tab" data-slide="1">Package</button>
+                        <button class="hero-tab" data-slide="2">Sneaker</button>
+                        <button class="hero-tab" data-slide="3">Interior</button>
+                        <button class="hero-tab" data-slide="4">Fashion</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Category Section -->
+    <section class="category-section section-padding" id="category">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">DANH MỤC</span>
+                <h2 class="section-title">Bạn đang tìm gì?</h2>
+            </div>
+            <div class="category-grid">
+                <!-- Grid item 1 (Fashion - Large tall) -->
+                <div class="category-card cat-tall" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Thời trang</h3>
+                        <p>Streetwear &bull; Luxury &bull; Local Brand</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+                <!-- Grid item 2 (Sneaker) -->
+                <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Sneaker</h3>
+                        <p>Authentic &bull; Limited &bull; Hype</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+                <!-- Grid item 3 (Accessories) -->
+                <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Phụ kiện</h3>
+                        <p>Mũ &bull; Ví &bull; Kính &bull; Trang sức</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+                <!-- Grid item 4 (Interior) -->
+                <div class="category-card cat-wide" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Nội thất</h3>
+                        <p>Bàn ghế &bull; Kệ tủ &bull; Modern Design</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+                <!-- Grid item 5 (Decor) -->
+                <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Decor</h3>
+                        <p>Tranh ảnh &bull; Đèn &bull; Đồ trang trí</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+                <!-- Grid item 6 (Lifestyle) -->
+                <div class="category-card" style="background-image: url('https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&fit=crop&q=80&w=800');">
+                    <div class="category-info">
+                        <h3>Lifestyle</h3>
+                        <p>Đồ dùng cá nhân &bull; Tiện ích</p>
+                        <span class="category-btn order-btn-trigger">Khám phá <i data-lucide="arrow-up-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Process Section -->
+    <section class="process-section section-padding" id="process">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">QUY TRÌNH</span>
+                <h2 class="section-title">QUY TRÌNH ORDER</h2>
+            </div>
+            <div class="process-flow">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-badge">01</div>
+                    <div class="step-card">
+                        <h3>Gửi link hoặc hình ảnh sản phẩm</h3>
+                        <p>Khách hàng lựa chọn và gửi thông tin link sản phẩm hoặc hình ảnh chụp màn hình kèm size, màu mong muốn.</p>
+                    </div>
+                </div>
+                <div class="process-arrow"><i data-lucide="arrow-down"></i></div>
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-badge">02</div>
+                    <div class="step-card">
+                        <h3>The Local Lab tư vấn & báo giá</h3>
+                        <p>Kiểm tra độ uy tín của shop bên Trung, tư vấn size chi tiết và báo mức giá trọn gói không phụ thu.</p>
+                    </div>
+                </div>
+                <div class="process-arrow"><i data-lucide="arrow-down"></i></div>
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-badge">03</div>
+                    <div class="step-card">
+                        <h3>Đặt cọc xác nhận đơn</h3>
+                        <p>Thực hiện thanh toán khoản cọc cam kết đơn hàng (từ 50% đến 100%) để lên đơn checkout ngay lập tức.</p>
+                    </div>
+                </div>
+                <div class="process-arrow"><i data-lucide="arrow-down"></i></div>
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-badge">04</div>
+                    <div class="step-card">
+                        <h3>Theo dõi vận chuyển</h3>
+                        <p>Hàng hóa được đặt, cập nhật mã vận đơn và lộ trình vận chuyển thông suốt từ Trung Quốc về Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="process-arrow"><i data-lucide="arrow-down"></i></div>
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="step-badge">05</div>
+                    <div class="step-card">
+                        <h3>Kiểm tra hàng</h3>
+                        <p>Nhân viên tiến hành khui kiện kiểm tra số lượng, màu sắc, size và tình trạng hư hại vật lý trước khi xuất kho.</p>
+                    </div>
+                </div>
+                <div class="process-arrow"><i data-lucide="arrow-down"></i></div>
+                <!-- Step 6 -->
+                <div class="process-step">
+                    <div class="step-badge">06</div>
+                    <div class="step-card">
+                        <h3>Giao tận tay khách hàng</h3>
+                        <p>Giao hàng tận nơi toàn quốc qua đơn vị vận chuyển nội địa uy tín, hỗ trợ đồng kiểm trực tiếp khi nhận hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us Section -->
+    <section class="why-choose-us-section section-padding" id="why-choose-us">
+        <div class="container">
+            <div class="why-header">
+                <span class="section-subtitle">GIÁ TRỊ</span>
+                <h2 class="why-title">Không chỉ là dịch vụ Order.</h2>
+                <p class="why-desc">Chúng tôi xây dựng một quy trình để khách hàng luôn biết đơn hàng đang ở đâu, chi phí gồm những gì và sẽ nhận được điều gì.</p>
+            </div>
+            
+            <div class="why-grid">
+                <!-- Card 1 -->
+                <div class="why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="eye"></i>
+                    </div>
+                    <h3>Minh bạch</h3>
+                    <ul class="why-card-list">
+                        <li>Báo giá rõ ràng</li>
+                        <li>Không phát sinh</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Chất lượng</h3>
+                    <ul class="why-card-list">
+                        <li>Ưu tiên nhà bán uy tín</li>
+                        <li>Kiểm tra trước khi giao</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Đồng hành</h3>
+                    <ul class="why-card-list">
+                        <li>Theo dõi đơn hàng</li>
+                        <li>Hỗ trợ tận tâm</li>
+                    </ul>
+                </div>
+                <!-- Card 4 -->
+                <div class="why-card">
+                    <div class="why-icon-box">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>Chính sách rõ ràng</h3>
+                    <ul class="why-card-list">
+                        <li>Đổi trả</li>
+                        <li>Hoàn tiền</li>
+                        <li>Cam kết</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Statistics Section (True Black Background) -->
+    <section class="statistics-section section-padding" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-num-wrapper"><span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span></div>
+                    <p class="stat-label">Danh mục sản phẩm</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num-wrapper"><span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span></div>
+                    <p class="stat-label">Báo giá minh bạch</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num-wrapper"><span class="stat-num" data-target="24">0</span><span>/</span><span class="stat-num" data-target="7">0</span></div>
+                    <p class="stat-label">Hỗ trợ khách hàng</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num-wrapper"><span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span></div>
+                    <p class="stat-label">Kiểm tra hàng trước giao</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Chính sách bán hàng Section -->
+    <section class="policies-section section-padding" id="policies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ĐIỀU KHOẢN</span>
+                <h2 class="section-title">Chính sách bán hàng</h2>
+                <p class="section-desc">Vui lòng đọc kỹ các điều khoản dưới đây để đảm bảo quyền lợi tốt nhất của bạn.</p>
+            </div>
+            
+            <div class="policies-accordion">
+                <!-- Policy 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">01</span>
+                        <span class="accordion-title">Phạm vi áp dụng</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Áp dụng cho toàn bộ sản phẩm Order và hàng sẵn của The Local Lab & The Local Lab Womens.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">02</span>
+                        <span class="accordion-title">Quy trình đặt hàng</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <div class="horizontal-steps">
+                                <div class="h-step">Khách chọn sản phẩm</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">Thanh toán cọc</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">The Local Lab xác nhận</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">Đặt hàng</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">Theo dõi</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">Kiểm tra</div>
+                                <div class="h-arrow">&darr;</div>
+                                <div class="h-step">Giao hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">03</span>
+                        <span class="accordion-title">Thanh toán</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <ul class="bullet-list">
+                                <li><strong>70% trước:</strong> Đối với các đơn hàng có giá trị cao hoặc theo thỏa thuận riêng.</li>
+                                <li><strong>50% cọc tối thiểu:</strong> Áp dụng cho đơn hàng thông thường.</li>
+                                <li><strong>100% với hàng sẵn:</strong> Thanh toán toàn bộ để giao hàng ngay.</li>
+                                <li>Có hỗ trợ nhận cọc trực tiếp tại Hà Nội.</li>
+                            </ul>
+                            
+                            <!-- Highlight FAQ Block -->
+                            <div class="highlight-faq-block">
+                                <div class="faq-block-header">
+                                    <i data-lucide="help-circle"></i>
+                                    <h4>Vì sao cần thanh toán phần còn lại trước khi hàng về?</h4>
+                                </div>
+                                <p class="faq-block-answer">
+                                    Đơn vị vận chuyển quốc tế cần được thanh toán để xử lý các thủ tục hải quan và thông quan hàng hóa. Việc hoàn tất thanh toán số dư trước khi hàng về kho Việt Nam giúp The Local Lab nhanh chóng giải phóng kiện hàng tại biên giới, đảm bảo quy trình thông suốt và ship hàng đến tay bạn ngay lập tức mà không lo trễ lịch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">04</span>
+                        <span class="accordion-title">Thời gian hàng</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Thời gian nhận hàng tính từ lúc cọc thành công đến khi nhận sản phẩm tại kho Việt Nam:</p>
+                            <ul class="bullet-list">
+                                <li><strong>Kho Hà Nội:</strong> 5 - 10 ngày làm việc.</li>
+                                <li><strong>Kho TP. HCM:</strong> 7 - 12 ngày làm việc.</li>
+                                <li>Lịch trình có thể bị ảnh hưởng do dịp lễ Tết hoặc kiểm soát thông quan định kỳ của hải quan (sẽ được thông báo sớm).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">05</span>
+                        <span class="accordion-title">Hủy đơn</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Khách hàng có quyền hủy đơn hàng và được hoàn cọc 100% nếu sản phẩm chưa được tiến hành thanh toán mua hàng trên website nước ngoài. Sau khi đơn đã được đặt mua thành công từ shop Trung Quốc, chúng tôi không hỗ trợ hủy đơn vì bất kỳ lý do gì từ phía khách hàng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 6 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">06</span>
+                        <span class="accordion-title">Đổi trả</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Hỗ trợ liên hệ đổi trả nếu sản phẩm bị giao sai mẫu, sai size hoặc bị hư hỏng nghiêm trọng do lỗi đóng gói, vận chuyển. Khách hàng chịu trách nhiệm nếu đặt nhầm thông số hoặc size mà không thông qua tư vấn phù hợp từ shop.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 7 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">07</span>
+                        <span class="accordion-title">Kiểm tra hàng</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Tất cả hàng hóa được The Local Lab mở kiện kiểm tra ngoại quan (size, mã màu, lỗi rách cơ bản) ngay tại kho Trung Quốc trước khi xếp container về Việt Nam, giảm thiểu tối đa rủi ro sai sót sản phẩm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 8 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">08</span>
+                        <span class="accordion-title">Hoàn tiền</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Hoàn trả 100% tiền cọc trong trường hợp kiện hàng bị thất lạc, hư hỏng không thể sử dụng trong quá trình vận chuyển quốc tế hoặc đối tác nước ngoài phát sai mẫu mã hoàn toàn mà không thể thương lượng đổi hàng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 9 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">09</span>
+                        <span class="accordion-title">Quyền & trách nhiệm</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p><strong>Về phía The Local Lab:</strong> Chịu trách nhiệm bảo quản sản phẩm an toàn, mua đúng đường link, đúng thuộc tính sản phẩm và cập nhật lộ trình kịp thời.</p>
+                            <p><strong>Về phía khách hàng:</strong> Cung cấp chính xác link, ảnh sản phẩm kèm thông tin liên hệ. Thanh toán tiền cọc và phần còn lại đúng thời hạn cam kết để nhận hàng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Policy 10 -->
+                <div class="accordion-item">
+                    <button class="accordion-trigger">
+                        <span class="accordion-num">10</span>
+                        <span class="accordion-title">Điều khoản bất khả kháng</span>
+                        <i data-lucide="chevron-down" class="accordion-chevron"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <p>Các trường hợp thiên tai, dịch bệnh, đóng biên do chính sách kiểm soát biên giới quốc tế hoặc chậm trễ lịch trình chuyến bay vận chuyển được xem là trường hợp bất khả kháng. The Local Lab được miễn trừ trách nhiệm về mặt thời gian, nhưng cam kết sẽ nỗ lực tối đa để bảo vệ tài sản và hoàn tiền cọc nếu đơn hàng bị hủy bỏ hoàn toàn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Cam kết Section -->
+    <section class="commitments-section section-padding" id="commitments">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">LỜI HỨA</span>
+                <h2 class="section-title">Cam kết của chúng tôi</h2>
+            </div>
+            
+            <div class="commitments-grid">
+                <!-- Cam ket 1 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="eye"></i></div>
+                    <h3>Minh bạch</h3>
+                    <p>Mọi khoản chi phí đều được liệt kê rõ ràng trước khi đặt hàng, tuyệt đối không có chi phí ẩn phát sinh.</p>
+                </div>
+                <!-- Cam ket 2 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="package-check"></i></div>
+                    <h3>Đúng sản phẩm</h3>
+                    <p>Cam kết đặt mua chuẩn xác theo đúng link, đúng size, đúng màu sắc mà khách hàng cung cấp.</p>
+                </div>
+                <!-- Cam ket 3 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="git-commit"></i></div>
+                    <h3>Đúng quy trình</h3>
+                    <p>Vận hành chuyên nghiệp theo quy trình khép kín, đảm bảo tính an toàn cho từng kiện hàng từ lúc nhận link.</p>
+                </div>
+                <!-- Cam ket 4 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="shield-check"></i></div>
+                    <h3>Kiểm tra trước giao</h3>
+                    <p>Hàng hóa luôn được khui kiểm tỉ mỉ tại kho Trung Quốc để hạn chế tối đa rủi ro lỗi kỹ thuật lớn.</p>
+                </div>
+                <!-- Cam ket 5 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="heart-handshake"></i></div>
+                    <h3>Hỗ trợ sau bán</h3>
+                    <p>Đồng hành cùng khách hàng khiếu nại, hoàn tiền hoặc đổi trả nếu có bất kỳ sự cố nào xảy ra sau khi nhận hàng.</p>
+                </div>
+                <!-- Cam ket 6 -->
+                <div class="commit-card">
+                    <div class="commit-icon-large"><i data-lucide="lock"></i></div>
+                    <h3>Bảo mật thông tin</h3>
+                    <p>Bảo mật tuyệt đối toàn bộ thông tin cá nhân, giao dịch và lịch sử đặt hàng của quý khách hàng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ Section -->
+    <section class="faq-section section-padding" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">HỎI ĐÁP</span>
+                <h2 class="section-title">Câu hỏi thường gặp</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Tại sao phải cọc?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Các sản phẩm order được cá nhân hóa hoàn toàn theo size, màu sắc và kiểu dáng khách hàng yêu cầu riêng từ nước ngoài. Khoản cọc từ 50% - 100% đóng vai trò xác thực trách nhiệm đặt hàng và là nguồn vốn chi trả trực tiếp cho hãng.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bao lâu hàng về?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hàng đặt từ các trang TMĐT Trung Quốc thường mất từ 5 - 10 ngày (Hà Nội) và 7 - 12 ngày (TP. HCM) tính từ thời điểm shop phát hàng đi. Lộ trình vận chuyển có thể được tra cứu trực tiếp qua mã đơn hàng.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có được kiểm tra hàng?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. Bạn hoàn toàn có quyền đồng kiểm cùng nhân viên giao hàng về mặt ngoại quan (size số, màu sắc, tình trạng nguyên vẹn của bao bì ngoài) để chắc chắn gói hàng không bị bể vỡ trước khi thanh toán phần còn lại.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có hoàn tiền không?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. The Local Lab cam kết hoàn cọc 100% qua chuyển khoản ngân hàng nếu xảy ra sự cố thất lạc gói hàng do vận chuyển hoặc nhà cung cấp nước ngoài phát sai sản phẩm nghiêm trọng mà không thể đổi trả.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có hàng Authentic không?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. Chúng tôi cam kết 100% hàng hóa được đặt trực tiếp tại các store phân phối chính hãng hoặc sàn giao dịch uy tín có chứng nhận kiểm định độc lập như Poizon, Tmall Global...</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Nếu hàng lỗi?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ngay khi phát hiện lỗi sản phẩm, bạn hãy liên hệ hotline hoặc nhắn tin cho Fanpage của chúng tôi. The Local Lab sẽ nhanh chóng liên hệ đối tác nước ngoài để khiếu nại, yêu cầu đền bù thiệt hại hoặc đổi trả hàng mới cho bạn.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có nhận order theo ảnh không?</h3>
+                        <i data-lucide="plus" class="faq-chevron"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. Chỉ cần bạn cung cấp hình ảnh chụp rõ nét sản phẩm, đội ngũ chăm sóc khách hàng của chúng tôi sẽ tìm kiếm nguồn hàng chính hãng chất lượng với mức giá tốt nhất trên các sàn Taobao, 1688, Tmall để báo giá lại.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CTA Section (True Black Background, Extra-large text, Secondary White pill CTA button) -->
+    <section class="cta-section section-padding" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-headline">READY TO ORDER?</h2>
+                <p class="cta-subtext">Để The Local Lab đồng hành cùng bạn từ lúc chọn sản phẩm đến khi món hàng được trao tận tay.</p>
+                <button class="btn btn-accent btn-large order-btn-trigger">ĐẶT HÀNG NGAY</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Footer Section (True Black Background, Multi-column layout) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">THE LOCAL LAB</a>
+                    <p class="footer-tagline">Authentic Selection &bull; Competitive Pricing &bull; Trusted Service</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-links-col">
+                        <h3>Điều hướng</h3>
+                        <ul>
+                            <li><a href="#category">Danh mục</a></li>
+                            <li><a href="#process">Quy trình</a></li>
+                            <li><a href="#why-choose-us">Vì sao chọn</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h3>Hỗ trợ</h3>
+                        <ul>
+                            <li><a href="#policies">Chính sách bán hàng</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#" class="track-btn-trigger">Tra cứu đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h3>Liên hệ</h3>
+                        <ul>
+                            <li>Hotline: 090 000 0000</li>
+                            <li>Email: support@thelocallab.vn</li>
+                            <li>Địa chỉ cọc: Hà Nội, Việt Nam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE LOCAL LAB. All rights reserved. &bull; <a href="#">Điều khoản sử dụng</a> &bull; <a href="#">Chính sách bảo mật</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ORDER MODAL -->
+    <div class="modal" id="orderModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeOrderModal" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h2>YÊU CẦU ORDER SẢN PHẨM</h2>
+                <p>Cung cấp đường dẫn hoặc mô tả sản phẩm để The Local Lab báo giá chi tiết.</p>
+            </div>
+            <form class="modal-form" id="orderForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prodLink">Đường dẫn sản phẩm hoặc tên</label>
+                        <input type="text" id="prodLink" placeholder="Dán link Taobao, 1688, Tmall...">
+                    </div>
+                    <div class="form-group">
+                        <label>Đính kèm hình ảnh</label>
+                        <div class="image-upload-wrapper">
+                            <input type="file" id="prodImage" accept="image/*" style="display: none;">
+                            <label for="prodImage" class="image-upload-label">
+                                <i data-lucide="upload-cloud"></i>
+                                <span>Chọn ảnh</span>
+                            </label>
+                            <span class="file-name-indicator" id="fileNameIndicator">Chưa chọn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prodSize">Kích thước (Size)</label>
+                        <input type="text" id="prodSize" placeholder="Ví dụ: L, 42, 38...">
+                    </div>
+                    <div class="form-group">
+                        <label for="prodColor">Màu sắc</label>
+                        <input type="text" id="prodColor" placeholder="Ví dụ: Đen, Trắng...">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="custName">Họ và tên <span class="required">*</span></label>
+                        <input type="text" id="custName" placeholder="Tên liên hệ nhận hàng" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="custPhone">Số điện thoại <span class="required">*</span></label>
+                        <input type="tel" id="custPhone" placeholder="SĐT liên lạc" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="prodNotes">Ghi chú chi tiết</label>
+                    <input type="text" id="prodNotes" placeholder="Yêu cầu thêm về đóng gói, mua hộ...">
+                </div>
+                <div class="modal-form-actions">
+                    <button type="submit" class="btn btn-primary btn-full">
+                        GỬI YÊU CẦU ORDER
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- TRACKING MODAL -->
+    <div class="modal" id="trackModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeTrackModal" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h2>TRA CỨU ĐƠN HÀNG</h2>
+                <p>Nhập mã đơn hàng (ví dụ: TLL-202601) để xem chi tiết lộ trình vận chuyển.</p>
+            </div>
+            <div class="track-search-box">
+                <input type="text" id="trackCodeInput" placeholder="Nhập mã đơn hàng TLL-..." style="text-transform: uppercase;">
+                <button class="btn btn-primary" id="searchTrackBtn">Tìm kiếm</button>
+            </div>
+            
+            <div class="track-result" id="trackResult">
+                <div class="track-empty-state">
+                    <i data-lucide="package" style="width: 40px; height: 40px; stroke-width: 1.5; color: #888888;"></i>
+                    <p>Nhập mã đơn hàng phía trên để theo dõi lộ trình đơn hàng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <span class="toast-message">Đã gửi yêu cầu thành công!</span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
