@@ -65,11 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const showSlide = (index) => {
         // Remove active class from all slides and tabs
         slides.forEach(slide => slide.classList.remove('active'));
-        tabs.forEach(tab => tab.classList.remove('active'));
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+            tab.classList.remove('tag-dark');
+            tab.classList.add('tag-neutro');
+        });
 
         // Add active to current
         slides[index].classList.add('active');
         tabs[index].classList.add('active');
+        tabs[index].classList.remove('tag-neutro');
+        tabs[index].classList.add('tag-dark');
         currentSlideIndex = index;
     };
 
@@ -286,10 +292,10 @@ document.addEventListener('DOMContentLoaded', () => {
         prodImage.addEventListener('change', (e) => {
             if (e.target.files && e.target.files.length > 0) {
                 fileNameIndicator.textContent = e.target.files[0].name;
-                fileNameIndicator.style.color = 'var(--color-accent)';
+                fileNameIndicator.style.color = 'var(--color-verde-botanico)';
             } else {
                 fileNameIndicator.textContent = 'Chưa chọn';
-                fileNameIndicator.style.color = 'var(--color-grey-dark)';
+                fileNameIndicator.style.color = 'var(--color-cinza-texto)';
             }
         });
     }
@@ -313,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 orderForm.reset();
                 if (fileNameIndicator) {
                     fileNameIndicator.textContent = 'Chưa chọn';
-                    fileNameIndicator.style.color = 'var(--color-grey-dark)';
+                    fileNameIndicator.style.color = 'var(--color-cinza-texto)';
                 }
                 orderModal.classList.remove('active');
                 document.body.style.overflow = '';
