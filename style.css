@@ -1570,9 +1570,18 @@ h1, h2, h3, h4, h5 {
     .commitments-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .commentary-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-4); /* 16px margins on mobile to prevent squishing */
+    }
+
     .section-padding {
         padding: var(--space-12) 0;
     }
@@ -1582,7 +1591,7 @@ h1, h2, h3, h4, h5 {
     }
     
     .logo {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .main-header {
@@ -1616,6 +1625,23 @@ h1, h2, h3, h4, h5 {
     .menu-toggle {
         display: flex;
     }
+
+    .hero-title {
+        font-size: clamp(32px, 8vw, 48px); /* Compact display text on mobile */
+    }
+
+    .hero-image-frame {
+        height: 240px; /* Reduced height to minimize scrolling distance */
+    }
+
+    .hero-cta {
+        flex-direction: column; /* Stack buttons vertically on small viewports */
+        gap: var(--space-2);
+    }
+
+    .hero-cta .btn {
+        width: 100%; /* Large tap targets */
+    }
     
     .category-grid {
         grid-template-columns: 1fr;
@@ -1648,6 +1674,11 @@ h1, h2, h3, h4, h5 {
     
     .commitments-grid {
         grid-template-columns: 1fr;
+    }
+
+    .commitments-grid .commit-card {
+        grid-column: span 1 !important; /* Reset the 7th card span on mobile */
+        max-width: 100% !important;
     }
     
     .stats-grid {
@@ -1693,5 +1724,33 @@ h1, h2, h3, h4, h5 {
     
     .footer-bottom a {
         margin: 0 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid is extremely clean and compact */
+        gap: var(--space-3);
+    }
+    
+    .stat-item {
+        padding: var(--space-4) var(--space-2);
+    }
+
+    .stat-num-wrapper {
+        font-size: 28px;
+    }
+
+    .commentary-title {
+        font-size: 26px;
+    }
+
+    .citacao-blockquote {
+        font-size: 18px;
+        padding-left: var(--space-4);
+    }
+
+    .commentary-cards {
+        grid-template-columns: 1fr;
     }
 }
