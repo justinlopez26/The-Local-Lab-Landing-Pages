@@ -67,6 +67,8 @@ html {
     color: var(--color-tinta);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -445,8 +447,8 @@ h1, h2, h3, h4, h5 {
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 270px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 240px;
     gap: var(--space-6);
 }
 
@@ -635,13 +637,14 @@ h1, h2, h3, h4, h5 {
 
 .commentary-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-12);
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
     align-items: start;
 }
 
 .commentary-letter {
-    max-width: 580px; /* Reading column max width */
+    max-width: 780px; /* Reading column max width */
+    margin: 0 auto;
 }
 
 .commentary-title {
@@ -958,9 +961,12 @@ h1, h2, h3, h4, h5 {
 
 .commit-card h3 {
     font-family: var(--font-serif);
-    font-size: 20px;
+    font-size: clamp(16px, 1.8vw, 20px);
     font-weight: 500;
     margin-bottom: var(--space-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .commit-card p {
@@ -1562,17 +1568,8 @@ h1, h2, h3, h4, h5 {
     .hero-content {
         max-width: 100%;
     }
-    
-    .why-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .commitments-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .commentary-grid {
-        grid-template-columns: 1fr;
         gap: var(--space-8);
     }
 }
@@ -1668,10 +1665,6 @@ h1, h2, h3, h4, h5 {
         margin-left: 20px;
     }
     
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .commitments-grid {
         grid-template-columns: 1fr;
     }
@@ -1679,6 +1672,11 @@ h1, h2, h3, h4, h5 {
     .commitments-grid .commit-card {
         grid-column: span 1 !important; /* Reset the 7th card span on mobile */
         max-width: 100% !important;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
     }
     
     .stats-grid {
